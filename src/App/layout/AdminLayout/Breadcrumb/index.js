@@ -21,15 +21,6 @@ class Breadcrumb extends Component {
         });
     };
 
-    componentDidUpdate = () => {
-        (navigation.items).map((item, index) => {
-            if (item.type && item.type === 'group') {
-                this.getCollapse(item);
-            }
-            return false;
-        });
-    };
-
     getCollapse = (item) => {
         if (item.children) {
             (item.children).filter( collapse => {
@@ -87,7 +78,7 @@ class Breadcrumb extends Component {
 
         }
 
-        document.title = title + ' | Datta Able Free React + Redux Admin Template';
+        document.title = title + ' | Church Calendar';
 
         return (
             <Aux>

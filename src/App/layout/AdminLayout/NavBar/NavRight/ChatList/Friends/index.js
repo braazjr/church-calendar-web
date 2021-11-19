@@ -11,8 +11,8 @@ class Friends extends Component {
         user: []
     };
 
-    componentDidUpdate = (nextProps) => {
-        if (!nextProps.listOpen) {
+    componentDidMount = (nextProps) => {
+        if (!nextProps?.listOpen) {
             this.setState({chatOpen: false, user: []});
         }
     };
