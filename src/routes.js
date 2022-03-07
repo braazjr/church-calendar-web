@@ -26,8 +26,9 @@ const GoogleMap = React.lazy(() => import('./Demo/Maps/GoogleMap/index'));
 const OtherSamplePage = React.lazy(() => import('./Demo/Other/SamplePage'));
 const OtherDocs = React.lazy(() => import('./Demo/Other/Docs'));
 
-const Ministers = React.lazy(() => import('./pages/ministers'));
-const MinisterForm = React.lazy(() => import('./pages/minister-form'));
+const Ministers = React.lazy(() => import('./pages/ministers.screen'));
+const MinisterForm = React.lazy(() => import('./pages/minister-form.screen'));
+const Calendar = React.lazy(() => import('./pages/calendar/calendar'));
 
 const routes = [
     { path: '/dashboard/default', exact: true, name: 'Default', component: DashboardDefault },
@@ -43,9 +44,11 @@ const routes = [
     { path: '/maps/google-map', exact: true, name: 'Google Map', component: GoogleMap },
     { path: '/sample-page', exact: true, name: 'Sample Page', component: OtherSamplePage },
     { path: '/docs', exact: true, name: 'Documentation', component: OtherDocs },
-    
+
     { path: '/ministers', exact: true, name: 'Ministers', component: Ministers },
-    { path: '/ministers/:id', exact: true, name: 'Ministers', component: MinisterForm }
+    { path: '/ministers/:id', exact: true, name: 'Ministers', component: MinisterForm },
+    { path: '/ministers/register', exact: true, name: 'Ministers', component: MinisterForm },
+    { path: '/calendar', exact: true, name: 'calendar', component: Calendar }
 ];
 
 export default routes;

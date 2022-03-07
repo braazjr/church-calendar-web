@@ -29,7 +29,29 @@ class Ministers extends React.Component {
                                 <Card.Title as="h5">ministérios</Card.Title>
                                 {/* <span className="d-block m-t-5">use props <code>striped</code> with <code>Table</code> component</span> */}
                             </Card.Header>
-                            <Card.Body>
+                            <Card.Body
+                                style={{
+                                    paddingTop: 10,
+                                }}>
+                                <Row>
+                                    <Col md={12} style={{
+                                        textAlign: 'end',
+                                    }}>
+                                        <Button
+                                            type={'submit'}
+                                            variant={'primary'}
+                                            size={'sm'}
+                                            style={{
+                                                marginRight: 50,
+                                                marginBottom: 10,
+                                            }}
+                                            onClick={() => {
+                                                this.props.history.push(`ministers/cadastro`)
+                                            }}>
+                                            criar novo
+                                        </Button>
+                                    </Col>
+                                </Row>
                                 <Table striped responsive>
                                     <thead>
                                         <tr>

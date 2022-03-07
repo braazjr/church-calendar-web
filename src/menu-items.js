@@ -12,6 +12,13 @@ export default {
                     type: 'item',
                     url: '/dashboard/default',
                     icon: 'feather icon-home',
+                },
+                {
+                    id: 'calendar',
+                    title: 'calendário',
+                    type: 'item',
+                    url: '/calendar',
+                    icon: 'feather icon-calendar',
                 }
             ]
         },

@@ -1,0 +1,23 @@
+.fc-toolbar-title {
+    color: #fff ;
+}
+
+.fc .fc-button-primary {
+    background-color: $primary-color !important;
+
+    &:disabled {
+        background-color: $primary-color !important;
+    }
+}
+
+a {
+    color: $primary-color;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: $primary-color !important;
+
+    .fc-daygrid-day-number {
+        color: $light-color !important;
+    }
+}
